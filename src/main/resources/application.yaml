@@ -1,0 +1,22 @@
+jwt:
+    lifetime: 600m
+ref:
+    lifetime: 300m
+logging:
+    level:
+        org:
+            springframework:
+                security: DEBUG
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/democloud
+        driver-class-name: org.postgresql.Driver
+        username: postgres
+        password: 1234
+    jpa:
+        hibernate:
+            ddl-auto: update
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+security:
+    jwt:
+        secret-key: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
